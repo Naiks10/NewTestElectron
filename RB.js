@@ -8,4 +8,9 @@ function leftbutton(button1, button2)
 {
     button1.value = 'Нажата левая кнопка';
     button2.value = "Правая кнопка";  
+};
+
+function newname(text, button)
+{
+    button.value = text;
 }

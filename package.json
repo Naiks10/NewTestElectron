@@ -20,6 +20,7 @@
     "electron": "^3.0.4"
   },
   "dependencies": {
+    "googleapis": "^27.0.0",
     "mssql": "^4.2.3"
   }
 }

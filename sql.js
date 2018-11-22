@@ -4,7 +4,7 @@ function newsql(text)
 const config = {
     user: 'sa',
     password: '123',
-    server: 'DESKTOP-12BNNTQ\RVO', 
+    server: 'DESKTOP-12BNNTQ\\RVO', 
     database: 'ZAK_base',
 }
 
@@ -12,7 +12,7 @@ const config = {
 const sql = require('mssql')
  
 sql.connect(config).then(() => {
-    return sql.query`select * from SOVM_KOMP`
+    return sql.query`SELECT * FROM SOVM_KOMP`
 }).then(result => {
     console.dir(result);
     text.value = result[0].SOV_KOMP;
